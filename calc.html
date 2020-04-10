@@ -22,85 +22,75 @@
         font-size: 42px;
         border-radius: 20px;
         padding-left: 10px;
-        padding-right: 10px;
-        
-        
+        padding-right: 10px;    
     }
     table {
         margin-top: 20px;
     }
     button {
-  background-color: #bbb;
-  padding: .5em;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 6px;
-  color: #fff;
-  font-family: 'Oswald';
-  font-size: 20px;
-  text-decoration: none;
-  border: none;
-  width:100px;
-  height: 100px;
-}
-button:hover {
-  
-  background: orange;
-  box-shadow: 0px 0px 1px #777;
-  
-}
-
+        background-color: #bbb;
+        padding: .5em;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 6px;
+        color: #fff;
+        font-family: 'Oswald';
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        width:100px;
+        height: 100px;
+    }
+    button:hover {
+        background: orange;
+        box-shadow: 0px 0px 1px #777;     
+    }
 </style>
-
 </head>
 <script>
     var ins;
     var int;
-function calcc()
-{
-    ins=eval(dis.value);
-    document.getElementById("dis").value=ins;
-    
-}
+    function calcc()
+    {
+        ins=eval(dis.value);
+        document.getElementById("dis").value=ins;
+    }
 </script>
 <body>
-<div align="center" id="calculator">
-<input type="text" id="dis" disabled>
-<table>
- <tr>
- <td><button onclick="dis.value+='+'" >+</button></td>
- <td><button onclick="dis.value+='-'">-</button></td>
- <td><button onclick="dis.value+='*'">*</button></td>
- <td><button onclick="dis.value+='/'">/</button></td>
- </tr>
- <tr>
-    <td><button onclick="dis.value+='9'">9</button></td>
-    <td><button onclick="dis.value+='8'" >8</button></td>
-    <td><button onclick="dis.value+='7'">7</button></td>
-    </tr>
-    <tr>
-        <td><button onclick="dis.value+='6'" >6</button></td>
-        <td><button  onclick="dis.value+='5'">5</button></td>
-        <td><button onclick="dis.value+='4'" >4</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="dis.value+='3'" >3</button></td>
-            <td><button onclick="dis.value+='2'">2</button></td>
-            <td><button onclick="dis.value+='1'">1</button></td>
+    <div align="center" id="calculator">
+        <input type="text" id="dis" disabled/>
+        <table>
+            <tr>
+                <td><button onclick="dis.value+='+'" >+</button></td>
+                <td><button onclick="dis.value+='-'">-</button></td>
+                <td><button onclick="dis.value+='*'">*</button></td>
+                <td><button onclick="dis.value+='/'">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="dis.value+='9'">9</button></td>
+                <td><button onclick="dis.value+='8'" >8</button></td>
+                <td><button onclick="dis.value+='7'">7</button></td>
+                <td><button onclick="dis.value+='('">(</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="dis.value+='6'" >6</button></td>
+                <td><button  onclick="dis.value+='5'">5</button></td>
+                <td><button onclick="dis.value+='4'" >4</button></td>
+                <td><button onclick="dis.value+=')'">)</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="dis.value+='3'" >3</button></td>
+                <td><button onclick="dis.value+='2'">2</button></td>
+                <td><button onclick="dis.value+='1'">1</button></td>
+                <td><button onclick="dis.value+='%'">%(MOD)</button></td>
             </tr>
             <tr>
                 <td><button onclick="dis.value+='0'">0</button></td>
                 <td><button onclick="dis.value=''">C</button></td>
                 <td><button onclick="calcc()" >=</button></td>
-                </tr>
-            
-        
-    
-</table>
-
-</div>
+                <td><button onclick="dis.value+='.'">.</button></td>
+            </tr>     
+        </table>
+    </div>
 </body>
-
-
-
 </html>
