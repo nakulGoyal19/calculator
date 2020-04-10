@@ -2,6 +2,8 @@
 Basic calculator made using JS
 
 With:
-  Add, Subtract, Multiply, Division, Modulus operations.
-  These '(' ')' brackets.
-  '.' Decimal Numbers.
+  1. Add, Subtract, Multiply, Division, Modulus operations.
+  
+  2. These '(' ')' brackets.
+  
+  3. '.' Decimal Numbers.
